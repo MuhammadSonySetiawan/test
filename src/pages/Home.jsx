@@ -37,10 +37,10 @@ function Home() {
         <div className="d-flex justify-content-center align-items-center flex-column my-3">
           <div className="row row-cols-1 row-cols-md-4 g-4">
             {userData?.map((item, key) => (
-              <>
-                <div key={key} className="col">
+              
+                <div key={key} className="col text-center ">
                   <div className="card h-100">
-                      <div clasNames="card-body text-center">
+                      <div clasNames="card-body" style={{ marginTop:"2rem",marginBottom: "2rem" }}>
                         <h5>{item.first_name}</h5>
                         <p>{item.email}</p>
                         <img
@@ -52,7 +52,7 @@ function Home() {
                     </div>
                   </div>
                 </div>
-              </>
+              
             ))}
           </div>
         </div>
