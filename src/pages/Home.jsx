@@ -35,17 +35,17 @@ function Home() {
       <div>
         {/* Content */}
         <div className="d-flex justify-content-center align-items-center flex-column my-3">
-          <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div className="row row-cols-1 row-cols-md-4 g-4">
             {userData?.map((item, key) => (
               <>
-                <div key={key} class="col">
-                  <div class="card h-100">
-                      <div class="card-body text-center">
+                <div key={key} className="col">
+                  <div className="card h-100">
+                      <div clasNames="card-body text-center">
                         <h5>{item.first_name}</h5>
                         <p>{item.email}</p>
                         <img
                           src={item.avatar}
-                          class="card-img-top"
+                          className="card-img-top"
                           alt="..."
                           style={{ width: "48%" }}
                         />

@@ -28,13 +28,13 @@ function Login() {
       <h1>Login Page</h1>
 
       <div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">
+        <div className="mb-3">
+          <label for="exampleInputEmail1" className="form-label">
             Email address
           </label>
           <input
             type="email"
-            class="form-control"
+            className="form-control"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             value={email}
@@ -44,19 +44,19 @@ function Login() {
             We'll never share your email with anyone else.
           </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">
+        <div className="mb-3">
+          <label for="exampleInputPassword1" className="form-label">
             Password
           </label>
           <input
             type="password"
-            class="form-control"
+            className="form-control"
             id="exampleInputPassword1"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit" class="btn btn-primary" onClick={handleLogin}>
+        <button type="submit" className="btn btn-primary" onClick={handleLogin}>
           Submit
         </button>
         {error && <p style={{ color: "red" }}>{error}</p>}
