@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 // Pages
 import Home from "./pages/Home";
 import Login from "./pages/Login.jsx"
-import Register from "./pages/Register.jsx";
 
 
 const router = createBrowserRouter([
@@ -17,10 +16,6 @@ const router = createBrowserRouter([
   {
     path: "/Home",
     element: <Home />,
-  },
-  {
-    path: "/register",
-    element: <Register />,
   },
 ]);
 
